@@ -4,6 +4,7 @@
 #include <iostream>
 #include <omp.h>
 #include <chrono>
+#include <cmath>
 //in our model sample image 
 //PPM header is : 
 //P6
