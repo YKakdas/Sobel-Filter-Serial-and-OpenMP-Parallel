@@ -212,7 +212,7 @@ void applySobelFilterParallel(PPMImage* img)
 
 void serial() {
 	PPMImage* image;
-	image = readPPM("model.ppm");
+	image = readPPM("sample.ppm");
 	auto start = std::chrono::high_resolution_clock::now();
 	changeColorPPMSerial(image);
 	applySobelFilterSerial(image);
@@ -225,7 +225,7 @@ void serial() {
 
 void parallel() {
 	PPMImage* image;
-	image = readPPM("model.ppm");
+	image = readPPM("sample.ppm");
 	auto start = std::chrono::high_resolution_clock::now();
 	changeColorPPMParallel(image);
 	applySobelFilterParallel(image);
